@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <!-- Hero -->
+  <section
+    class="min-h-screen pt-28 flex flex-col items-center justify-center gap-8 px-6 md:px-16 bg-gray-50 text-gray-900"
+  >
+    <div class="max-w-3xl text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-blue-600">
+        Contáctanos
+      </h1>
+      <p class="text-lg md:text-xl text-gray-700">
+        Si tienes dudas, comentarios o simplemente deseas más información, completa el formulario o usa los datos de contacto a continuación.
+      </p>
+    </div>
+  </section>
+
+  <!-- Formulario + Info -->
+  <section
+    class="min-h-screen flex flex-col md:flex-row gap-12 items-center justify-center px-6 md:px-16 bg-white py-16"
+  >
+    <!-- Formulario -->
+    <div class="flex-1 w-full max-w-lg">
+      <h2 class="text-2xl font-semibold mb-6 text-gray-900">Envíanos un mensaje</h2>
+      <form class="grid grid-cols-1 gap-6">
+        <input
+          type="text"
+          placeholder="Nombre completo"
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        />
+        <input
+          type="email"
+          placeholder="Correo electrónico"
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        />
+        <input
+          type="text"
+          placeholder="Asunto"
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        />
+        <textarea
+          placeholder="Escribe tu mensaje"
+          rows="5"
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        ></textarea>
+        <button
+          type="submit"
+          class="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-md"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+
+    <!-- Info de contacto + Mapa -->
+    <div class="flex-1 w-full max-w-lg space-y-8">
+      <!-- Datos de contacto -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-6 text-gray-900">Información de contacto</h2>
+        <ul class="space-y-4 text-gray-700">
+          <li><strong>📧 Email:</strong> contacto@ejemplo.com</li>
+          <li><strong>📞 Teléfono:</strong> +00 123 456 789</li>
+          <li><strong>📍 Dirección:</strong> Calle Falsa 123, Ciudad</li>
+        </ul>
+      </div>
+
+      <!-- Mapa / Imagen -->
+      <div class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center border border-gray-300 shadow-lg">
+        <span class="text-gray-500 font-semibold">Mapa / Imagen aquí</span>
+      </div>
+    </div>
+  </section>
+</Layout>

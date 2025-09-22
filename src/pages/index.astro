@@ -1,11 +1,202 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <!-- Hero -->
+  <section
+    class="min-h-screen pt-20 flex flex-col md:flex-row items-center justify-center gap-10 px-16 bg-white text-gray-900"
+  >
+    <!-- Columna de texto -->
+    <div class="flex-1 pl-12 text-center md:text-left">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">
+        ENCABEZADO SOBRE LA TRANSFORMACIÓN QUE BRINDA TU PRODUCTO
+      </h1>
+      <p class="text-lg md:text-xl mb-6 max-w-lg text-gray-600">
+        Párrafo pequeño para complementar la <br /> información del encabezado.
+      </p>
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+      >
+        <a
+          href="#"
+          class="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
+        >
+          LLAMADO A LA ACCIÓN ESPECÍFICO
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna de imagen -->
+    <div class="flex-1 flex justify-center">
+      <div
+        class="w-full max-w-md h-80 bg-gray-100 rounded-lg flex items-center justify-center border border-gray-300"
+      >
+        <span class="text-gray-500 font-semibold">Imagen / Video aquí</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección problema -->
+  <section
+    id="1"
+    class="min-h-screen pt-20 flex flex-col md:flex-row items-center justify-center gap-10 px-16 bg-gray-50 text-gray-900"
+  >
+    <!-- Columna de imagen -->
+    <div class="flex-1 flex justify-center">
+      <div
+        class="w-full max-w-md h-96 bg-gray-100 rounded-lg flex items-center justify-center border border-gray-300"
+      >
+        <span class="text-gray-500 font-semibold">Imagen / Video aquí</span>
+      </div>
+    </div>
+
+    <!-- Columna de texto -->
+    <div class="flex-1 pl-12 text-center md:text-left">
+      <h1 class="text-2xl md:text-4xl font-bold mb-4">
+        Encabezado que enfatiza en algún problema que tus clientes potenciales
+        tengan
+      </h1>
+      <p class="text-lg md:text-xl mb-6 max-w-lg text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+        nostrum, vero, qui facere eligendi dolore veritatis inventore at ad
+        accusantium eos nulla cum. Fuga odit aut rem quasi pariatur, eius
+        maiores impedit vero, assumenda, velit quidem officia recusandae cum.
+        Autem aperiam rerum est eligendi. Blanditiis eveniet non mayores magnam
+        similique!
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección solución -->
+  <section
+    id="2"
+    class="min-h-screen pt-16 flex flex-col justify-center items-center bg-white px-6"
+  >
+    <div class="max-w-5xl mx-auto text-center">
+      <!-- Título y párrafo -->
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Introduce la Solución</h2>
+      <p class="text-lg text-gray-600 mb-8 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eius
+        aliquid cum hic fugiat, possimus laudantium et illum voluptates repellat
+        sed magnam quia accusamus ex doloremque ipsa praesentium quidem
+        molestiae repudiandae tenetur dolores odio labore maxime. Cumque ut
+        asperiores commodi.
+      </p>
+    </div>
+
+    <!-- Imagen / mockup -->
+    <div class="w-full max-w-2xl mx-auto mb-12">
+      <div
+        class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center border border-gray-300"
+      >
+        <span class="text-gray-500 font-semibold">Imagen / Mockup aquí</span>
+      </div>
+    </div>
+
+    <!-- Tarjetas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Tarjeta 1 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+        <!-- Ícono -->
+        <div
+          class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-blue-100 text-blue-600"
+        >
+          <!-- Icono SVG genérico -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m0-4h.01M12 20h.01M4 6h16M4 10h16M4 14h16M4 18h16"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Beneficio 1</h3>
+        <p class="text-gray-600">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
+          labore?
+        </p>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+        <div
+          class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-green-100 text-green-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Beneficio 2</h3>
+        <p class="text-gray-600">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
+          labore?
+        </p>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+        <div
+          class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-purple-100 text-purple-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zm0 0V4m0 12v4"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Beneficio 3</h3>
+        <p class="text-gray-600">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
+          labore?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section
+    id="3"
+    class="min-h-screen flex flex-col justify-center items-center bg-gray-50 px-6 text-gray-900"
+  >
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-lg text-gray-600 mb-4">Llamado a la acción</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-12">
+        Encabezado para transformar a los
+        usuarios en clientes
+      </h2>
+      <a
+        href="#3"
+        class="px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
+      >
+        LLAMADO A LA ACCIÓN ESPECÍFICO
+      </a>
+    </div>
+  </section>
 </Layout>
